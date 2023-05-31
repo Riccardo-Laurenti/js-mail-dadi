@@ -10,7 +10,7 @@
 const recElement = document.getElementById('mail-dadi');
 
 const getEmail = ['riccardo.laurenti95@gmail.com', 'laurachisci@gmail.com', 'maurilaurenti@yahoo.it'];
-console.table(getEmail);
+
 
 const userEmail = prompt('Inserisci qui la tua email');
 console.log(userEmail);
@@ -28,5 +28,5 @@ for ( let i = 0; i < getEmail.length; i++ ) {
 if (isSave) {
     console.log(userEmail);
 } else {
-    console.log('Email errata, non puoi accedere');
+    console.log('Email errata, non puoi accedere !');
 }
