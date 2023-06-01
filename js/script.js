@@ -15,17 +15,17 @@ const getEmail = ['riccardo.laurenti95@gmail.com', 'laurachisci@gmail.com', 'mau
 const userEmail = prompt('Inserisci qui la tua email');
 console.log(userEmail);
 
-let isSave = false;
+let trueGet = false;
 
 for ( let i = 0; i < getEmail.length; i++ ) {
     if (userEmail === getEmail[i]) {
         console.log('BENVENUTO !',`Email riconosciuta`);
-        isSave = true;
+        trueGet = true;
     }
 }
 
 
-if (isSave) {
+if (trueGet) {
     console.log(userEmail);
 } else {
     console.log('Email errata, non puoi accedere !');
