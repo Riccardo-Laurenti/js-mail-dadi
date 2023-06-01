@@ -7,11 +7,11 @@
 
 let nutUser = Math.floor(Math.random() * 6) + 1;
 
-console.log(`Il tiro dell'utente è ${nutUser}`);
+console.log(`Il tiro dell'utente è : ${nutUser}`);
 
 let computerNut = Math.floor(Math.random() * 6) + 1;
 
-console.log(`Il tiro del Computer è ${computerNut}`);
+console.log(`Il tiro del Computer è : ${computerNut}`);
 
 
 if (nutUser > computerNut) {
