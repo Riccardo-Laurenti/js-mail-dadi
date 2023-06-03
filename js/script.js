@@ -19,14 +19,25 @@ let trueGet = false;
 
 for ( let i = 0; i < getEmail.length; i++ ) {
     if (userEmail === getEmail[i]) {
-        console.log('BENVENUTO !',`Email riconosciuta`);
+        console.log(`Email riconosciuta.`);
         trueGet = true;
     }
 }
 
+// STAMPO IN PAGINA -->
 
 if (trueGet) {
+    recElement.innerText = `Benvenuto ${userEmail}`;
+} else {
+    recElement.innerText = `Spiacente, la tua email non risulta registrata.`;
+    console.log('Email errata.');
+}
+
+
+/* STAMPO IN CONSOLE -->  */
+
+/*if (trueGet) {
     console.log(userEmail);
 } else {
     console.log('Email errata, non puoi accedere !');
-}
+} */
