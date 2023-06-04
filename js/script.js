@@ -13,25 +13,25 @@ const getEmail = ['riccardo.laurenti95@gmail.com', 'laurachisci@gmail.com', 'mau
 
 
 const userEmail = prompt('Inserisci qui la tua email');
-console.log(userEmail);
+//console.log(userEmail);
 
 let trueGet = false;
 
-for ( let i = 0; i < getEmail.length; i++ ) {
-    if (userEmail === getEmail[i]) {
-        console.log(`Email riconosciuta.`);
-        trueGet = true;
+    for ( let i = 0; i < getEmail.length; i++ ) {
+        if (userEmail === getEmail[i]) {
+            console.log(`Email riconosciuta.`);
+            trueGet = true;
+        }
     }
-}
 
-// STAMPO IN PAGINA -->
+    // STAMPO IN PAGINA -->
 
-if (trueGet) {
-    recElement.innerText = `Benvenuto ${userEmail}`;
-} else {
-    recElement.innerText = `Spiacente, la tua email non risulta registrata.`;
-    console.log('Email errata.');
-}
+    if (trueGet) {
+        recElement.innerText = `Benvenuto ${userEmail}`;
+    } else {
+        recElement.innerText = `Spiacente, la tua email non risulta registrata.`;
+        console.log('Email errata.');
+    }
 
 
 /* STAMPO IN CONSOLE -->  */

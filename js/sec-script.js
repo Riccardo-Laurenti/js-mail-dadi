@@ -19,5 +19,5 @@ if (nutUser > computerNut) {
 } else if (computerNut > nutUser) {
     console.log('Ha vinto il Computer !!!');
 } else if (nutUser === computerNut) {
-    console.log('Pareggio..');
+    console.log('Avete Pareggiato..');
 }
